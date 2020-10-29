@@ -8,7 +8,6 @@ public class Main {
     public static void main(String[] args) {
         String playerOne = "";
         String computerPlay = "";
-        String again = "";
         int computerInt = 0;
 
         Scanner scanner = new Scanner(System.in);
@@ -19,10 +18,10 @@ public class Main {
             playerOne = scanner.next().toUpperCase();
             if (playerOne.equals("N")) {
                 System.out.println("Alright, next time.");
-                continue;
+                break;
             }
             if (!playerOne.equals("Y")) {
-                System.out.println("Run that back.. I said choose yes or no.");
+                System.out.println("Lets run that back.. I said choose yes or no.");
                 continue;
             }
             System.out.println("Let's go. Rock, Paper, Scissors!\n" +
